@@ -1,0 +1,23 @@
+{
+  "db": {
+    "dialect": "sqlite",
+    "database": "test_db",
+    "storage": ":memory:",
+    "username": "root",
+    "password": ""
+  },
+  "environment": "test",
+  "jwt": {
+    "secret": "mysecretvalue"
+  },
+  "log": {
+    "console": true,
+    "http": false,
+    "level": "error",
+    "sql": false,
+    "timestamp": true
+  },
+  "server": {
+    "port": 8081
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "db": {
+    "host": "$DB_HOSTNAME",
+    "port": "$DB_PORT",
+    "dialect": "postgres",
+    "database": "$DB_DATABASE",
+    "username": "$DB_USERNAME",
+    "password": "$DB_PASSWORD"
+  },
+  "environment": "dev",
+  "jwt": {
+    "secret": "$JWT_SECRET"
+  },
+  "log": {
+    "console": true,
+    "http": true,
+    "level": "debug",
+    "sql": false,
+    "timestamp": true
+  },
+  "server": {
+    "port": "$SERVER_PORT"
+  }
+}

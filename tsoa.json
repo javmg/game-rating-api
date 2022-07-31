@@ -1,0 +1,23 @@
+{
+  "entryFile": "./src/app.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "controllerPathGlobs": [
+    "**/controller/*.ts"
+  ],
+  "spec": {
+    "outputDirectory": "./gen/doc",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "bearerToken": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "routes": {
+    "iocModule": "./src/config/ioc.ts",
+    "routesDir": "./gen/route",
+    "authenticationModule": "./src/middleware/auth.ts"
+  }
+}
